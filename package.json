@@ -19,7 +19,11 @@
     "// ------ PRODUCTION ----- //": "",
     "start:prod": "nodemon src/index.ts"
   },
-  "author": "Surya",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/suryast/node-ts-jest-eslint-prettier"
+  },
+  "author": "suryast_",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.8.4",
