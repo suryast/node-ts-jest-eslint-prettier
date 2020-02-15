@@ -1,5 +1,5 @@
 {
-  "name": "node-jest-babel-template",
+  "name": "node-ts-jest-eslint-prettier",
   "version": "1.0.0",
   "description": "boilerplate for doing coding exercise using javascript",
   "main": "src/index.js",
