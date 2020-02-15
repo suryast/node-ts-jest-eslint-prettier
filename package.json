@@ -1,0 +1,45 @@
+{
+  "name": "node-jest-babel-template",
+  "version": "1.0.0",
+  "description": "boilerplate for doing coding exercise using javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "// ------ DEVELOPMENT ----- //": "",
+    "debug": "nodemon src/index.ts",
+    "convert": "ts-jest config:migrate ./jest.config.js",
+    "// ------ TESTING ----- //": "",
+    "test": "jest --watchAll",
+    "coverage": "jest --collectCoverageFrom=src/**/*.ts --coverage",
+    "// ------ BUILDING ----- //": "",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "// ------ LINTING ----- //": "",
+    "lint:list": "eslint */**/*.js --fix",
+    "lint": "eslint */**/*.js --fix",
+    "// ------ PRODUCTION ----- //": "",
+    "start:prod": "nodemon src/index.ts"
+  },
+  "author": "Surya",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "ts-node": "^8.6.2"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.5"
+  }
+}
